@@ -14,7 +14,7 @@ class RockAdapter(
     var trackList : List<Rock> = listOf(),
     private val onRockClick : (rock : Rock) ->Unit
 ) : RecyclerView.Adapter<RockHolder>() {
-    //
+
     fun updateRock(newTrackList: List<Rock>){
         trackList = newTrackList
         notifyDataSetChanged()
